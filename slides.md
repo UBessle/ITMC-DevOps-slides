@@ -1,18 +1,16 @@
 # DevOps
 ## Mehr als nur ein Hype?
 
-Uwe Bessle
+Uwe.Bessle@iteratec.de
 
-Steven Berlin
-
-Notes: Uwe
-* Herzlich Willkommen zum DevOps Track auf dem TechCamp 2019. Wir, mein Kollege Steven und ich wollen Euch ein wenig auf das Thema des Tracks einstimmen.
-Wir glauben nämlich, dass das Thema DevOps mehr als nur ein Hype ist. DevOps wird das Anforderungsprofil, was man künftig als Entwickler können und tun muss, nachhaltig verändern.
+Notes:
+* Herzlich Willkommen zum DevOps Vortrag im Rahmen des ITMC Innovation Forums 2019. 
+* Meine feste Überzeugung ist es, dass das Thema DevOps mehr als nur ein Hype ist. DevOps wird das Anforderungsprofil, an die künftige Arbeit als Software-Entwickler aber auch an die generelle Organisation der IT in Unternehmen nachhaltig verändern.
 * Aber lasst uns mit der Frage starten, ob DevOps überhaupt ein Hype ist.
 
 ---
 
-## DevOps Hype
+## DevOps - ein aktueller Hype
 
 Das Interesse an DevOps wächst kontinuierlich
 
@@ -23,7 +21,7 @@ Wie man an den Daten von Google Trends sieht, steigt das Interesse am Thema DevO
 
 ----
 
-## DevOps Hype
+## DevOps - ein aktueller Hype
 
 Zum Vergleich das Interesse am aktuellen Hype-Thema Kubernetes
 
@@ -35,7 +33,7 @@ Wie man sieht, hat Kubernetes den anfänglichen Rückstand seit Anfang 2016 kont
 
 ----
 
-## DevOps Hype
+## DevOps - ein aktueller Hype
 
 China und Indien liegen weit vorn beim Interesse an DevOps
 
@@ -46,7 +44,7 @@ Besonders interessant war für mich die Auswertung nach Regionen. China und Indi
 
 ----
 
-## DevOps Hype
+## DevOps - ein aktueller Hype
 
 Die USA und Großbritannien müssen aufpassen, nicht abgehängt zu werden
 
@@ -57,7 +55,7 @@ Während die üblichen Vorreiter, also die USA und Großbritannien mit deutliche
 
 ----
 
-## DevOps Hype
+## DevOps - ein aktueller Hype
 
 Deutschland rangiert momentan unter ferner liefen
 
@@ -68,62 +66,59 @@ Deutschland rangiert da schon etwas abgeschlagen, zwischen den Vereinigten Arabi
 
 ----
 
-## DevOps Hype
+## DevOps - ein aktueller Hype
 
 DevOps Stellenausschreibungen auf StepStone
 
 ![DevOps Trend](./img/StepStone_Jobsuche_DevOps_2019-04-14.png)
 
 Notes: Uwe
-Auch auf dem Stellenmarkt spielt das Thema DevOps inzwischen eine große Rolle. Hier einmal exemplarisch 1310 aktuelle Stellenausschreibungen auf StepStone für DevOps
+Auch auf dem Stellenmarkt spielt das Thema DevOps inzwischen eine große Rolle. Hier einmal exemplarisch 1310 Stellenausschreibungen Anfang Mai auf StepStone für DevOps
 
 ---
 
-## Was heißt DevOps?
+## Was bedeutet DevOps eigentlich?
 
 Notes: Uwe
 - DevOps ist also tatsächlich aktuell ein Hype-Thema.
-- Aber Steven, sag doch mal, was verbirgt sich hinter diesem komischen DevOps eigentlich?
-
-Steven
-- Danke Uwe, dass Du das fragst.
-- Wenn ich so lese und höre, was in den Stellenausschreibungen drin steht, die Du vorhin angesprochen hast, dann beschleicht mich das Gefühl, dass viele keine Ahnung haben, wovon sie da eigentlich sprechen bzw. schreiben.
+- Aber was verbirgt sich hinter diesem komischen Kunstwort ?
+- Wenn ich so lese, was in den vorhin angesprochenen Stellenausschreibungen und diversen Artikeln drin steht, dann beschleicht mich das Gefühl, dass viele keine Ahnung haben, wovon sie da eigentlich sprechen bzw. schreiben.
 - Dabei ist es eigentlich ganz einfach.
 
 ----
 
 ![Dev und Ops](./img/diagram_01.svg)
 
-Notes: Steven
-Bei DevOps geht es genau darum Applikations-Entwicklung
+Notes: 
+Bei DevOps geht es genau darum, Applikations-Entwicklung
 
 ----
 
 ![Dev und Ops](./img/diagram_02.svg)
 
-Notes: Steven
+Notes: 
 und Betrieb von Anwendungen,
 ----
 
 ![Dev und Ops](./img/diagram_03.svg)
 
-Notes: Steven
+Notes:
 - also das, was früher streng durch eine hohe Mauer getrennt war,
 - über die dann ab und zu mal ein fertiges Release geworfen wurde,
 
 ----
 
 ![Dev und Ops](./img/diagram_04.svg)
-Notes: Steven
+Notes:
 zusammenzubringen.
 
 ---
 
 ## Was tut man da?
 
-Notes: Steven
+Notes:
 - Irgendwie klingt das jetzt noch nicht so richtig revolutionär.
-- Sag mal Uwe, was ändert sich denn jetzt eigentlich durch DevOps?
+- Was ändert sich denn jetzt eigentlich durch DevOps?
 - Was tut man denn da so?
 
 ----
@@ -132,7 +127,7 @@ Notes: Steven
 
 Notes: Uwe
 - Eigentlich ist das ziemlich trivial. Entwickler tun das, was sie immer tun,
-- sie entwickeln Programme, die Dinge, die bisher manuell getan wurden, automatisiert tun, nur dass sie das eben auf die üblichen OPS-Aufgaben anwenden
+- sie entwickeln Programme, die Dinge, die bisher manuell getan wurden, automatisiert tun, nur dass sie das eben auf die üblichen Administrations-(OPS-)Aufgaben anwenden
 - Wenn ein Admin bislang einen Server manuell installiert hat, dann tut das bei DevOps jetzt ein Stückchen Programm.
 - Das heißt dann zu neudeutsch automatisierte Infrastrukturprovisionierung.
 
@@ -144,22 +139,22 @@ Notes: Uwe
 - Damit das gut klappt, verfolgt man als DevOps Engineer einen Ansatz, der sich "Infrastructure as Code" nennt.
 - bei diesem Ansatz beschreit man deklarativ oder prozedural als Code, welche Infrastruktur benötigt wird.
 - Wenn man diesen Code dann ausführt, wird automatisch die passende Infrastruktur erzeugt
-- oder auch abgerissen, wenn sie nicht mehr benötigt wird
+- oder eben abgerissen, wenn sie nicht mehr benötigt wird
 
 ----
 
 ![DevOps Aufgaben](./img/diagram_13.svg)
 
 Notes: Uwe
-- Das ganze betrifft aber nicht nur die Erzeugung und Löschung von Infrastrukturprovisionierung
-- sondern z.B. auch das Monitoring und Alerting der betriebenen Systeme
+- Das ganze betrifft aber nicht nur die Erzeugung, Provisionierung und Löschung von Infrastrukturprovisionierung
+- sondern z.B. auch die Sicherung, Wiederherstellung und Überwachung (Monitoring und Alerting) der betriebenen Systeme
 
 ----
 
 ![DevOps Aufgaben](./img/diagram_14.svg)
 
 Notes: Uwe
-- Das Prinzip "Infrastructure as Code" geht aber noch weiter
+- Das Prinzip "Infrastructure as Code" geht aber weit über das Thema Automatisierung hinaus.
 - Was macht heute jeder anständige Entwickler?
 - Er versioniert seinen Code, vorzugsweise in github
   * damit keine Änderungen verloren gehen
@@ -194,7 +189,7 @@ Notes: Uwe
 ![DevOps Aufgaben](./img/diagram_18.svg)
 
 Notes: Uwe
-- letztendlich möglichst automatisch live stellt
+- letztendlich möglichst automatisch live stellen
 - im Sinne eines Continuous Delivery
 
 ----
@@ -202,11 +197,12 @@ Notes: Uwe
 ![DevOps Aufgaben](./img/diagram_19.svg)
 
 Notes: Uwe
-* Letztendlich geht es also schlicht darum die bewährten Methoden von Dev auch auf Ops-Themen anwenden:
+* Letztendlich geht es also schlicht darum, die bewährten Methoden aus der Entwicklung (Dev) auch auf den Betrieb (Ops) anzuwenden:
     * Automatisierung
+    * Versionierung
     * Tests
-    * Versionsverwaltung
     * Staging
+    * Continuous Integration / Continuous Delivery
 
 ---
 <!-- .slide: class="t-210" -->
@@ -216,7 +212,7 @@ Notes: Uwe
 Notes: Uwe
 - OK, was man als DevOps Engineer so macht, ist hoffentlich einigermaßen klar
 - Bleibt nur die Frage, ob sich das auch lohnt.
-- Steven, hast Du vielleicht gute Argumente, warum es Sinn macht, DevOps im eigenen Unternehmen einzuführen?
+- Warum macht es Sinn, DevOps in den Unternehmen einzuführen?
 - Was bringt das eigentlich?
 
 ----
@@ -226,20 +222,20 @@ Notes: Uwe
 
 ### you build it, you run it
 
-Notes: Steven
-- Ganz klar Uwe, die Antwort auf Deine Frage lautet, "you build it, you run it".
+Notes: 
+- Ganz klar, die entscheidende Antwort auf die letzte Frage lautet, "you build it, you run it".
 - Für mich ist das der mit Abstand wichtigste Punkt.
 - Heerscharren von Admins haben sich in der Vergangenheit über schlecht betreibbare Software von den Entwicklern beschwert.
 - Und um ehrlich zu sein, viel zu oft hatten sie mit ihren Beschwerden recht.
   * unklare Fehlermeldungen
-  * Tonnen von Log-Einträgen, die die Platte zumöhlen ohne einen Funken Nutzen für den Admin
-  * fehlende Betriebshandbücher
+  * Tonnen von Log-Einträgen, die die Platte zumüllen ohne einen Funken Nutzen für den Admin
+  * fehlende, unvollständige und veraltete Betriebshandbücher
   * undokumentierte Konfigurationseinstellungen
   * fehlende Robustheit im Fehlerfall
-- All das verursacht Schmerzen bei den Admins, die die Fehler und Unzulänglichkeiten der Entwickler ausbaden müssen
+- All das verursacht Schmerzen bei den Admins, die die Fehler und Unzulänglichkeiten der Entwickler mit viel Einsatz und nächtlichen Bereitschaftsdiensten ausbaden müssen
 - Mit DevOps landen diese Schmerzen jetzt erstmalig bei denen, die auch die Mittel und Möglichkeiten haben, die Ursachen dieser Schmerzen mit Stumpf und Stiel auszurotten, nämlich den Entwicklern.
 - Das Ziel ist nicht, dass zukünftig die Entwickler Freitag Nacht aus dem Bett geklingelt werden, weil das neueste Deployment vom Freitag Nachmittag fehlerhaft war.
-- Das Ziel ist, dass Software-Lösungen gebaut werden, bei denen gar keiner mehr rausgeklingelt werden muss
+- Das Ziel ist, dass Software-Lösungen gebaut werden, bei denen nach einem Release-Termin gar niemand mehr rausgeklingelt werden muss.
 
 ----
 <!-- .slide: class="t-210" -->
@@ -249,7 +245,7 @@ Notes: Steven
 ### you build it, you run it
 ### speed
 
-Notes: Steven
+Notes:
 - Der zweite ganz wichtige Punkt ist mehr Speed bei der Entwicklung und Live-Stellung neuer Features
 - Jeder Entwickler weiß, wie nervig und zeitaufwändig es in der Vergangenheit war, die Admins von selbst kleinsten Änderungen der Infrastruktur zu überzeugen
 - da mussten Tickets geschrieben und vor allen Dingen mühsam gerechtfertigt werden
@@ -262,11 +258,10 @@ Notes: Steven
 ## Mehr Speed?
 ## Also Agil?
 
-Notes: Steven
+Notes: 
 - Stop, mehr Speed?
 - Das war doch das Thema mit der Agilität.
 - Was hat das denn jetzt wieder mit DevOps zu tun?
-- Uwe, kannst Du uns das mal erklären?
 
 ----
 
@@ -275,8 +270,7 @@ Notes: Steven
 &nbsp;
 
 Notes: Uwe
-- Sehr gern Steven.
-- Lass uns dazu einmal auf folgendes Bild schauen
+- Lasst uns dazu einmal auf folgendes Bild schauen
 
 ----
 
@@ -337,7 +331,7 @@ BizDevOps
 Notes: uwe
 - Na gut, das mit der Agilität hätten wir geklärt.
 - Aber wie funktioniert denn DevOps heute tatsächlich in der Praxis?
-- Steven, wie sieht das bei Dir in den Projekten aus?
+- Wie sieht das in den realen Projekten aus?
 
 ----
 
@@ -346,8 +340,8 @@ Notes: uwe
 &nbsp;
 ----------
 
-Notes: Steven
-Ja, schauen wir uns doch mal an, wie das in der Praxis meistens läuft
+Notes:
+Schauen wir uns doch mal an, wie das in der Praxis meistens läuft
 - In einem Entwicklungs-Team gibt es natürlich eine Reihe von Entwicklern
 
 ----
@@ -357,7 +351,7 @@ Ja, schauen wir uns doch mal an, wie das in der Praxis meistens läuft
 &nbsp;
 ----------
 
-Notes: Steven
+Notes: 
 - In agilen Projekte kommt dann in der Regel noch ein Agiler Coach oder auch Scrum Master hinzu
 - und auf alle Fälle natürlich auch ein sogenannter Product Owner
 
@@ -368,7 +362,7 @@ Notes: Steven
 &nbsp;
 ----------
 
-Notes: Steven
+Notes: 
 - sobald DevOps ins Spiel kommt, wird in der Regel versucht, diese Aufgabe durch einen spezialisierten DevOps Engineer zu besetzen.
 - Meist kommt der aus dem bisherigen Admin-Team
 
@@ -379,7 +373,7 @@ Notes: Steven
 &nbsp;
 ----------
 
-Notes: Steven
+Notes: 
 * Neben dem DevOps Engineer gibt es meistens aber noch mehr spezialisierte Rollen im Team
   * den Security-Champion
   * den UX-Experten
@@ -394,7 +388,7 @@ Notes: Steven
 Team <= 10
 ----------
 
-Notes: Steven
+Notes:
 * Problematisch wird es, wenn man die optimale Teamgröße agiler Teams einhalten will
 * also das 2-Pizza-Team mit nicht mehr als 6-10 Teammitgliedern
 
@@ -413,8 +407,8 @@ Notes: Steven
 
 ## Wie funktioniert DevOps richtig?
 
-Notes: Steven
-* Uwe, hast Du eine Idee, wie man dieses Problem auflösen kann?
+Notes: 
+* Wie lösen erfolgreiche Unternehmen dieses Problem auf?
 
 ----
 
@@ -423,9 +417,8 @@ Notes: Steven
 &nbsp;
 ----------
 
-Notes: Uwe
-* Na klar doch.
-* Schauen wir uns einfach noch mal das Bild an, dass Du gerade gezeichnet hast
+Notes:
+* Schauen wir uns einfach noch mal das Bild an, dass ich gerade gezeigt habe.
 * Ein Team mit wenig Fußvolk, also Entwicklern und dafür vielen spezialisierten Rollen
 
 ----
@@ -452,9 +445,9 @@ Notes: Uwe
 
 Notes: Uwe
 * Das gleiche passiert schrittweise auch mit anderen querschnittlichen Kompetenzen, die langsam aber sicher ebenfalls zur Entwicklung gehören
-* Damit geht der Trend in manchen Bereichen wieder vom Spezialisten zum möglichst vielseitigen Generalisten
+* Damit geht der Trend in manchen Bereichen wieder vom Spezialisten zum vielseitigen Generalisten
 * Trotzdem werden Entwickler auch einen Fokus haben, wo sie im Team über das meiste Wissen verfügen und auf einem Gebiet quasi als Champion agieren
-* Letztendlich glauben wir, dass DevOps-Rolle in einem agilen Team keine spezialisierte Rolle eines speziellen Teammitglieds sein wird, sondern eine Fähigkeit, über die mehrere Mitglieder im Team und damit das gesamte Team verfügt ==> Mein Zielbild ist also das DevOps-fähige Team
+* Letztendlich glauben wir, dass die DevOps-Rolle in einem agilen Team nicht durch ein spezialisiertes Rolle Teammitglied besetzt wird. Vielmehr handelt es sich bei DevOps um eine Fähigkeit, über die mehrere Mitglieder im Team und damit das gesamte Team verfügen ==> Mein Zielbild ist also das DevOps-fähige Team
 
 ----
 
@@ -507,14 +500,14 @@ BizUXSecDevQAOps
 
 Notes: Uwe
 * Auch wenn das jetzt alles einfach und logisch klang, können wir dennoch in vielen Unternehmen erkennen, dass sie sich schwer tun mit der Einführung von DevOps.
-* Steven, wo liegen denn nach Deiner Erfahrung die Knackpunkte, bei denen viele Unternehmen ins Schwitzen kommen, wenn es um die Einführung von DevOps geht?
+* Wo liegen nach meiner Erfahrung die Knackpunkte, bei denen viele Unternehmen ins Schwitzen kommen, wenn es um die Einführung von DevOps geht?
 
 ----
 
 ### 24*7 Support?
 
-Notes: Steven
-* Ja Uwe, das größte Problem lauert für viele beim 24*7 Support
+Notes: 
+* Das größte Problem lauert für viele beim 24*7 Support.
 * "Den will doch kein Entwickler machen" ist das Standard-Argument der DevOps-Skeptiker
 * Und in der Tat, beim Thema Wochenendbereitschaft, dreht sich vielen Entwicklern der Magen um
 
@@ -527,16 +520,17 @@ Notes: Steven
 Notes: Steven
 * Der Denkfehler vieler DevOps Skeptiker sowohl aus den Reihen der Admins als auch der Entwickler liegt darin, dass sie von der heutigen Ausgangssituation ausgehen, also von schlecht betreibbaren Anwendungen
 * Dabei passiert in Wirklichkeit eines, die Entwickler haben eine hohe intrinsische Motivation, Schmerzen zu vermeiden, also nächtliche Anrufe am Wochenden. Und sie haben die Möglichkeit, Maßnahmen zu ergreifen, die nächlichen Anrufen vorbeugen
-* Früher oder später wird allen Beteiligten klar, dass sich alles, was sich in einem Run-Book aufschreiben lässt, um einen Betrieb durch Dritte zu ermöglichen
+* Früher oder später wird allen Beteiligten klar, dass sich alles, was sich in einem Run-Book aufschreiben lässt, um einen Betrieb durch Dritte zu ermöglichen,
 * dass sich das alles auch automatisieren lässt, so das gar kein Mensch im Störungsfall mehr eingreifen muss
 * Wir haben erst vor kurzem in einem größeren Architektur-Review bei einem Kunden in der Praxis überprüfen können, welchen großen Schritt die Systemlandschaft in Sachen Robustheit und Betreibbarkeit gemacht hat, seitdem die Betriebsverantwortung aus einer zentralen Betriebsabteilung in die Teams verlagert wurde.
-* Dort funktioniert der automatisierte 24*7 Betrieb der Anwendungen inzwischen so gut, dass man auf eine formale, vertraglich fixierte Bereitschaft seitens der Teams verzichten kann. Die Teammitglieder veröffentlichen ihre Telefonnummern für den Störfall freiwillig, weil sie wissen, dass dieses Ereignis nur extrem selten eintreten wird.
+* Dort funktioniert der automatisierte 24x7 Betrieb der Anwendungen inzwischen so gut, dass man auf eine formale, vertraglich fixierte Bereitschaft seitens der Teams trotz 24x7 Betrieb und hohen Anforderungen an die tatsächliche Verfügbarkeit verzichten kann. 
+* Die Teammitglieder veröffentlichen ihre Telefonnummern für den Störfall freiwillig, weil sie wissen, dass dieses Ereignis nur extrem selten eintreten wird.
 
 ----
 
 ### Zentrale Infrastruktur?
 
-Notes: Steven
+Notes: 
 * das zweite Totschlag-Argument der DevOps-Skeptiker ist in der Regel die zentrale Infrastruktur,
 * Wo bleibt bei der Einfühgun von DevOps der Betrieb der zentralen Infrastruktur?
 
@@ -544,35 +538,35 @@ Notes: Steven
 
 ![DevOps Aufgaben](./img/diagram_02.svg)
 
-Notes: Steven
-* Wir hatten bei der Darstellung der traditionellen Aufgabenverteilung zwischen Entwicklung und Betrieb ein wenig geschummelt.
+Notes: 
+* Ich hatte bei der Darstellung der traditionellen Aufgabenverteilung zwischen Entwicklung und Betrieb ein wenig geschummelt.
 
 ----
 
 ![DevOps Aufgaben](./img/diagram_05.svg)
 
-Notes: Steven
+Notes:
 * In Wirklichkeit verantwortet Ops neben dem Applikationsbetrieb bisher auch den Betrieb der Basis-Infrastruktur
 
 ----
 
 ![DevOps Aufgaben](./img/diagram_06.svg)
 
-Notes: Steven
+Notes: 
 * und in Wirklichkeit, benötigt man für die zentrale Infrastruktur natürlich nicht nur einen Betrieb, sondern auch eine Weiterentwicklung
 
 ----
 
 ![DevOps Aufgaben](./img/diagram_07.svg)
 
-Notes: Steven
+Notes: 
 * Wir haben beim Thema DevOps bislang immer nur über die Zusammenlegung von Anwendungs-Entwicklung und -Betrieb gesprochen, also Application DevOps
 
 ----
 
 ![DevOps Aufgaben](./img/diagram_08.svg)
 
-Notes: Steven
+Notes: 
 * Das DevOps Prinzip trifft aber genauso auch auf die Bereitstellung der zentralen Infrastruktur zu.
 * Das erfordert querschnittliche Kompetenzen
 * Wiederkehrende DevOps-Aufgaben werden in Form von Libraries abstrahiert und den verschiedenen Teams zur Verfügung gestellt (z.B. Terraform Module)
@@ -582,7 +576,7 @@ Notes: Steven
 
 ![DevOps Aufgaben](./img/diagram_09.svg)
 
-Notes: Steven
+Notes: 
 * Letztendlich wird die Zweiteilung in Entwicklung und Betrieb also durch eine Zweiteilung in Applikationen und Infrastruktur ersetzt
 * Auf beiden Ebenen werden DevOps Prinzipien und Technologien zum Einsatz gebracht
 * Aus den alten OPS-Teams werden einzelne Mitarbeiter in die Applikations-Teams wechseln, um die Ops-Kompetenzen in den Applikations-Teams zu stärken
@@ -590,27 +584,27 @@ Notes: Steven
 
 ---
 
-## Wie komme ich zu DevOps?
+## Wie erwerbe ich als Entwickler das benötigte DevOps-KnowHow?
 
-Notes: Steven
+Notes: 
 * Wie einzelne OPS-Mitarbiter in die Anwendungs-Teams wechseln oder auch geschickt werden, kann ich mir ja noch gut vorstellen.
-* Aber sag mal Uwe, wie soll das funktionieren, dass zukünftig alle oder zumindest viele Entwickler sich mit den OPS- und Infrastruktur-Themen auskennen?
+* Aber wie soll das funktionieren, dass zukünftig alle oder zumindest viele Entwickler sich mit den OPS- und Infrastruktur-Themen auskennen?
 
 ----
 
 ![DevOps Ausbildung](./img/diagram_19.svg)
 
 Notes: Uwe
-* In der Tat Steven, das ist eine sehr berechtigte Frage
-* Lass uns noch einmal auf das Bild vom Anfang schauen, wo wir erklärt haben, was die DevOps Tätigkeiten ausmacht.
-* Mit den meisten dort genannten Dingen, wie z.B. Testautomatisierung, kennt sich der durchschnittliche Entwickler wunderbar aus.
+* In der Tat, das ist eine sehr berechtigte Frage.
+* Lässt uns noch einmal auf das Bild vom Anfang schauen, wo ich erklärt habe, was die DevOps Tätigkeiten ausmacht.
+* Mit den meisten dort genannten Dingen, wie z.B. Testautomatisierung, kennt sich Otto Normal-Entwickler wunderbar aus.
 
 ----
 
 ![DevOps Ausbildung](./img/diagram_20.svg)
 
 Notes: Uwe
-* Es gibt dort aber auch Themen, wie Automatisierte Infrastrukturprovisionierung und Infrastructure as Code, die für viele Entwickler noch Neuland darstellen.
+* Es gibt aber auch Themen, wie automatisierte Infrastrukturprovisionierung und Infrastructure as Code, die für viele Entwickler noch Neuland darstellen.
 * Dazu kommen weitere Kompetenzen, um die sich bislang die Admins gekümmert haben
 
 ----
@@ -651,7 +645,7 @@ Notes: Uwe
 Notes: uwe
 * Learning by Doing ist hier für mich das große Stichwort
 * Gerade in der Zusammenarbeit von ehemaligen OPS-Mitarbeitern und interessierten Entwicklern können beide Seiten viel voneinander lernen
-* Zu Infrastructure as Code gehört für mich auch das gemeinsame Arbeiten an diesem Code in Form von Pair Programming, einer optimal für das Lernen geiigneten Form der Zusammenarbeit im Entwicklungs-Team
+* Zu Infrastructure as Code gehört für mich auch das gemeinsame Arbeiten an diesem Code in Form von Pair Programming, einer optimal für das Lernen geeigneten Form der Zusammenarbeit im Entwicklungs-Team
 * Daneben gehört aber auch die explizite Ausbildung in Form von Trainings mit auf die Agenda.
 
 ----
@@ -686,7 +680,6 @@ Notes: Uwe
 * an DevOps führt in Zukunft kein Weg vorbei <!-- .element: class="fragment" -->
 * Start Doing <!-- .element: class="fragment" -->
 * Learn Fast <!-- .element: class="fragment" -->
-  * viel Spaß auf dem TechCamp und bei den folgenden Beiträgen <!-- .element: class="fragment" -->
 * Die Welt wartet nicht darauf, dass wir in Deutschland aus dem Knick kommen <!-- .element: class="fragment" -->
 
 ---
@@ -696,9 +689,6 @@ Notes: Uwe
 Uwe Bessle @bessi65<br/>
 [uwe.bessle@iteratec.com](mailto:uwe.bessle@iteratec.com)
 
-Steven Berlin @_sberlin<br/>
-[steven-sebastian.berlin@iteratec.com](mailto:steven-sebastian.berlin@iteratec.com)
-
 https://iteratec.de
 
-https://github.com/iteratec/techcamp-devops-slides
+https://github.com/UBessle/ITMC-DevOps-slides

@@ -1,11 +1,11 @@
 # DevOps - Mehr als nur ein Hype
-Slides for the DevOps keynote at TechCamp 2019 https://techcamp.hamburg/
+Slides for the DevOps presentation at ITMC Innovation Forum 2019
 
 ## Live
-https://iteratec.github.io/techcamp-devops-slides/#/
+https://UBessle.github.io/ITMC-DevOps-slides/#/
 
 ## PDF
-https://github.com/iteratec/techcamp-devops-slides/raw/gh-pages/devops-mehr-als-nur-ein-hype.pdf
+https://github.com/UBessle/ITMC-DevOps-slides/raw/gh-pages/devops-mehr-als-nur-ein-hype.pdf
 
 ## Usage
 Type a `?` in the presentation to open a dialog listing the available shortcuts.
