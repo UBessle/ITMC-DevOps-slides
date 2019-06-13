@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./_assets/./theme/custom.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"># DevOps
+## Mehr als nur ein Hype?
+
+Uwe.Bessle@iteratec.de
+
+<aside class="notes"><ul>
+<li>Herzlich Willkommen zum DevOps Vortrag im Rahmen des ITMC Innovation Forums 2019. </li>
+<li>Meine feste Überzeugung ist es, dass das Thema DevOps mehr als nur ein Hype ist. DevOps wird das Anforderungsprofil, an die künftige Arbeit als Software-Entwickler aber auch an die generelle Organisation der IT in Unternehmen nachhaltig verändern.</li>
+<li>Aber lasst uns mit der Frage starten, ob DevOps überhaupt ein Hype ist.</li>
+</ul>
+</aside></script></section><section ><section data-markdown><script type="text/template">
+## DevOps - ein aktueller Hype
+
+Das Interesse an DevOps wächst kontinuierlich
+
+![DevOps Trend](./img/DevOps_Google_Trends_2019-04-14.png)
+
+<aside class="notes"><p>Uwe
+Wie man an den Daten von Google Trends sieht, steigt das Interesse am Thema DevOps seit 2014 kontinuierlich an. Seit ca. Mitte 2018 hat sich diese Entwicklung sogar noch beschleunigt.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## DevOps - ein aktueller Hype
+
+Zum Vergleich das Interesse am aktuellen Hype-Thema Kubernetes
+
+![DevOps Kubernetes Trend](./img/DevOps_kubernetes_Google_Trends_2019-04-14.png)
+
+<aside class="notes"><p>Uwe
+Damit Ihr ein Gefühl für das absolute Interesse an dem Thema bekommt, habe ich hier mal den Vergleich zum Interesse an Kubernetes dargestellt.
+Wie man sieht, hat Kubernetes den anfänglichen Rückstand seit Anfang 2016 kontinuierlich aufgeholt und ist in der ersten Hälfte 2017 an DevOps vorbei gezogen. Wer genau hinschaut erkennt aber, dass DevOps seit Mitte 2018 beim Wachstum gleich gezogen hat und langsam wieder Boden gut macht.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## DevOps - ein aktueller Hype
+
+China und Indien liegen weit vorn beim Interesse an DevOps
+
+![DevOps Trend](./img/DevOps_Google_Trends_nach-Region_2019-04-14.png)
+
+<aside class="notes"><p>Uwe
+Besonders interessant war für mich die Auswertung nach Regionen. China und Indien liegen weit vorn.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## DevOps - ein aktueller Hype
+
+Die USA und Großbritannien müssen aufpassen, nicht abgehängt zu werden
+
+![DevOps Trend](./img/DevOps_Google_Trends_nach-Region-US_2019-04-14.png)
+
+<aside class="notes"><p>Uwe
+Während die üblichen Vorreiter, also die USA und Großbritannien mit deutlichem Abstand bei den Google Suchanfragen folgen</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## DevOps - ein aktueller Hype
+
+Deutschland rangiert momentan unter ferner liefen
+
+![DevOps Trend](./img/DevOps_Google_Trends_nach-Region-DE_2019-04-14.png)
+
+<aside class="notes"><p>Uwe
+Deutschland rangiert da schon etwas abgeschlagen, zwischen den Vereinigten Arabischen Emiraten und Südafrika.</p>
+</aside></script></section><section data-markdown><script type="text/template">
+## DevOps - ein aktueller Hype
+
+DevOps Stellenausschreibungen auf StepStone
+
+![DevOps Trend](./img/StepStone_Jobsuche_DevOps_2019-04-14.png)
+
+<aside class="notes"><p>Uwe
+Auch auf dem Stellenmarkt spielt das Thema DevOps inzwischen eine große Rolle. Hier einmal exemplarisch 1310 Stellenausschreibungen Anfang Mai auf StepStone für DevOps</p>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Was bedeutet DevOps eigentlich?
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>DevOps ist also tatsächlich aktuell ein Hype-Thema.</li>
+<li>Aber was verbirgt sich hinter diesem komischen Kunstwort ?</li>
+<li>Wenn ich so lese, was in den vorhin angesprochenen Stellenausschreibungen und diversen Artikeln drin steht, dann beschleicht mich das Gefühl, dass viele keine Ahnung haben, wovon sie da eigentlich sprechen bzw. schreiben.</li>
+<li>Dabei ist es eigentlich ganz einfach.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![Dev und Ops](./img/diagram_01.svg)
+
+<aside class="notes"><p>Bei DevOps geht es genau darum, Applikations-Entwicklung</p>
+</aside></script></section><section data-markdown><script type="text/template">
+![Dev und Ops](./img/diagram_02.svg)
+
+<aside class="notes"><p>und Betrieb von Anwendungen,</p>
+</aside></script></section><section data-markdown><script type="text/template">
+![Dev und Ops](./img/diagram_03.svg)
+
+<aside class="notes"><ul>
+<li>also das, was früher streng durch eine hohe Mauer getrennt war,</li>
+<li>über die dann ab und zu mal ein fertiges Release geworfen wurde,</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![Dev und Ops](./img/diagram_04.svg)
+<aside class="notes"><p>zusammenzubringen.</p>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Was tut man da?
+
+<aside class="notes"><ul>
+<li>Irgendwie klingt das jetzt noch nicht so richtig revolutionär.</li>
+<li>Was ändert sich denn jetzt eigentlich durch DevOps?</li>
+<li>Was tut man denn da so?</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_11.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Eigentlich ist das ziemlich trivial. Entwickler tun das, was sie immer tun,</li>
+<li>sie entwickeln Programme, die Dinge, die bisher manuell getan wurden, automatisiert tun, nur dass sie das eben auf die üblichen Administrations-(OPS-)Aufgaben anwenden</li>
+<li>Wenn ein Admin bislang einen Server manuell installiert hat, dann tut das bei DevOps jetzt ein Stückchen Programm.</li>
+<li>Das heißt dann zu neudeutsch automatisierte Infrastrukturprovisionierung.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_12.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Damit das gut klappt, verfolgt man als DevOps Engineer einen Ansatz, der sich &quot;Infrastructure as Code&quot; nennt.</li>
+<li>bei diesem Ansatz beschreit man deklarativ oder prozedural als Code, welche Infrastruktur benötigt wird.</li>
+<li>Wenn man diesen Code dann ausführt, wird automatisch die passende Infrastruktur erzeugt</li>
+<li>oder eben abgerissen, wenn sie nicht mehr benötigt wird</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_13.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Das ganze betrifft aber nicht nur die Erzeugung, Provisionierung und Löschung von Infrastrukturprovisionierung</li>
+<li>sondern z.B. auch die Sicherung, Wiederherstellung und Überwachung (Monitoring und Alerting) der betriebenen Systeme</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_14.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Das Prinzip &quot;Infrastructure as Code&quot; geht aber weit über das Thema Automatisierung hinaus.</li>
+<li>Was macht heute jeder anständige Entwickler?</li>
+<li>Er versioniert seinen Code, vorzugsweise in github<ul>
+<li>damit keine Änderungen verloren gehen</li>
+<li>damit es zu jeder Änderung einen Commit-Kommentar gibt, der die Intention der Änderung festhält</li>
+<li>also z.B. die Nummer des zugehörigen Tickets oder der zugrunde liegenden Feature_Story</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_15.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>und natürlich schreibt man als Entwickler für seinen Code vernünftige automatisierte Tests</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_16.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>wann immer es Änderungen gibt, sorgen entsprechende Pipelines für die Continuous Integration</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_17.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>die dann Änderungen über diverse Stages</li>
+<li>mit den entsprechenden Tests</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_18.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>letztendlich möglichst automatisch live stellen</li>
+<li>im Sinne eines Continuous Delivery</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_19.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Letztendlich geht es also schlicht darum, die bewährten Methoden aus der Entwicklung (Dev) auch auf den Betrieb (Ops) anzuwenden:<ul>
+<li>Automatisierung</li>
+<li>Versionierung</li>
+<li>Tests</li>
+<li>Staging</li>
+<li>Continuous Integration / Continuous Delivery</li>
+</ul>
+</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template"><!-- .slide: class="t-210" -->
+
+## Warum DevOps?
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>OK, was man als DevOps Engineer so macht, ist hoffentlich einigermaßen klar</li>
+<li>Bleibt nur die Frage, ob sich das auch lohnt.</li>
+<li>Warum macht es Sinn, DevOps in den Unternehmen einzuführen?</li>
+<li>Was bringt das eigentlich?</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="t-210" -->
+
+## Warum DevOps?
+
+### you build it, you run it
+
+<aside class="notes"><ul>
+<li>Ganz klar, die entscheidende Antwort auf die letzte Frage lautet, &quot;you build it, you run it&quot;.</li>
+<li>Für mich ist das der mit Abstand wichtigste Punkt.</li>
+<li>Heerscharren von Admins haben sich in der Vergangenheit über schlecht betreibbare Software von den Entwicklern beschwert.</li>
+<li>Und um ehrlich zu sein, viel zu oft hatten sie mit ihren Beschwerden recht.<ul>
+<li>unklare Fehlermeldungen</li>
+<li>Tonnen von Log-Einträgen, die die Platte zumüllen ohne einen Funken Nutzen für den Admin</li>
+<li>fehlende, unvollständige und veraltete Betriebshandbücher</li>
+<li>undokumentierte Konfigurationseinstellungen</li>
+<li>fehlende Robustheit im Fehlerfall</li>
+</ul>
+</li>
+<li>All das verursacht Schmerzen bei den Admins, die die Fehler und Unzulänglichkeiten der Entwickler mit viel Einsatz und nächtlichen Bereitschaftsdiensten ausbaden müssen</li>
+<li>Mit DevOps landen diese Schmerzen jetzt erstmalig bei denen, die auch die Mittel und Möglichkeiten haben, die Ursachen dieser Schmerzen mit Stumpf und Stiel auszurotten, nämlich den Entwicklern.</li>
+<li>Das Ziel ist nicht, dass zukünftig die Entwickler Freitag Nacht aus dem Bett geklingelt werden, weil das neueste Deployment vom Freitag Nachmittag fehlerhaft war.</li>
+<li>Das Ziel ist, dass Software-Lösungen gebaut werden, bei denen nach einem Release-Termin gar niemand mehr rausgeklingelt werden muss.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="t-210" -->
+
+## Warum DevOps?
+
+### you build it, you run it
+### speed
+
+<aside class="notes"><ul>
+<li>Der zweite ganz wichtige Punkt ist mehr Speed bei der Entwicklung und Live-Stellung neuer Features</li>
+<li>Jeder Entwickler weiß, wie nervig und zeitaufwändig es in der Vergangenheit war, die Admins von selbst kleinsten Änderungen der Infrastruktur zu überzeugen</li>
+<li>da mussten Tickets geschrieben und vor allen Dingen mühsam gerechtfertigt werden</li>
+<li>für nahezu jede Änderung musste man wegen potentiell möglicher Auswirkungen einen extra Antrag beim Change Advisory Board stellen</li>
+<li>und selbst simpelste Änderungen dauerten schon mal eine Woche oder auch noch viel länger</li>
+<li>Mit DevOps gehören diese Verzögerungen der Vergangenheit an, weil im gleichen Team jemand mitarbeitet, der das einfach alles mehr oder weniger sofort tun kann, ohne noch groß bei anderen Abteilungen betteln zu müssen</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Mehr Speed?
+## Also Agil?
+
+<aside class="notes"><ul>
+<li>Stop, mehr Speed?</li>
+<li>Das war doch das Thema mit der Agilität.</li>
+<li>Was hat das denn jetzt wieder mit DevOps zu tun?</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps und Agilität](./img/diagram_51.svg)
+
+&nbsp;
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Lasst uns dazu einmal auf folgendes Bild schauen</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps und Agilität](./img/diagram_52.svg)
+
+&nbsp;
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Bei DevOps geht es darum, die Schranken zwischen der Entwicklung und dem Betrieb von Anwendungen einzureißen.</li>
+<li>Das hilft bei der Qualität der erbrachten Leistungen und insbesondere bei der Stabilität der Systeme</li>
+<li>Das hilft aber auch dabei, die Geschwindigkeit von Änderungen zu erhöhen, indem die Verzögerung eliminiert wird, die unweigerlich an Teamgrenzen eintritt, um notwendige Abstimmungen und Umpriorisierungen herbeizuführen.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps und Agilität](./img/diagram_53.svg)
+
+&nbsp;
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Bei Agilität widerum geht es darum, den Entwicklungsprozess flexibler und schlanker zu machen, damit der Fokus der Arbeit auf dem Erreichen von Businessnutzen für den Kunden bzw. Anwender und nicht auf irgendwelchen Formalien liegt.</li>
+<li>Während es bei DevOps darum geht, die Schranken zwischen Entwicklern und Betrieb einzureißen, geht es bei Agilen Projekten und Vorgehensweisen unter anderem darum, die Schranken zwischen der Fachabteilung und den Entwicklern einzureißen</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps und Agilität](./img/diagram_54.svg)
+
+&nbsp;
+
+<aside class="notes"><p>uwe</p>
+<ul>
+<li>Wenn wir beide Trends zusammennehmen, dann landen wir bei Agilen Teams mit DevOps-Kompetenzen</li>
+<li>in der heutigen Zeit gibt es natürlich auch dafür eine Abkürzung</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps und Agilität](./img/diagram_54.svg)
+
+Biz
+-------
+</script></section><section data-markdown><script type="text/template">
+![DevOps und Agilität](./img/diagram_54.svg)
+
+BizDev
+--------
+</script></section><section data-markdown><script type="text/template">
+![DevOps und Agilität](./img/diagram_54.svg)
+
+BizDevOps
+---------
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Wie funktioniert DevOps heute in der Praxis?
+
+<aside class="notes"><p>uwe</p>
+<ul>
+<li>Na gut, das mit der Agilität hätten wir geklärt.</li>
+<li>Aber wie funktioniert denn DevOps heute tatsächlich in der Praxis?</li>
+<li>Wie sieht das in den realen Projekten aus?</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Heute](./img/diagram_31.svg)
+
+&nbsp;
+----------
+
+<aside class="notes"><p>Schauen wir uns doch mal an, wie das in der Praxis meistens läuft</p>
+<ul>
+<li>In einem Entwicklungs-Team gibt es natürlich eine Reihe von Entwicklern</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Heute](./img/diagram_32.svg)
+
+&nbsp;
+----------
+
+<aside class="notes"><ul>
+<li>In agilen Projekte kommt dann in der Regel noch ein Agiler Coach oder auch Scrum Master hinzu</li>
+<li>und auf alle Fälle natürlich auch ein sogenannter Product Owner</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Heute](./img/diagram_33.svg)
+
+&nbsp;
+----------
+
+<aside class="notes"><ul>
+<li>sobald DevOps ins Spiel kommt, wird in der Regel versucht, diese Aufgabe durch einen spezialisierten DevOps Engineer zu besetzen.</li>
+<li>Meist kommt der aus dem bisherigen Admin-Team</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Heute](./img/diagram_34.svg)
+
+&nbsp;
+----------
+
+<aside class="notes"><ul>
+<li>Neben dem DevOps Engineer gibt es meistens aber noch mehr spezialisierte Rollen im Team<ul>
+<li>den Security-Champion</li>
+<li>den UX-Experten</li>
+<li>den Testautomatisierer</li>
+<li>den Performance-Experten</li>
+<li>und und und</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Heute](./img/diagram_34.svg)
+
+Team <= 10
+----------
+
+<aside class="notes"><ul>
+<li>Problematisch wird es, wenn man die optimale Teamgröße agiler Teams einhalten will</li>
+<li>also das 2-Pizza-Team mit nicht mehr als 6-10 Teammitgliedern</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Heute](./img/diagram_35.svg)
+
+Team <= 10
+----------
+
+<aside class="notes"><p>Steven</p>
+<ul>
+<li>wenn man die Nachteile großer Teams vermeiden will, dann führen viele Spezialisten im Team unweigerlich dazu, dass nur noch wenige &quot;normale&quot; Entwickler im Team verbleiben können</li>
+<li>das macht Teams aber auch nicht gerade produktiv</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Wie funktioniert DevOps richtig?
+
+<aside class="notes"><ul>
+<li>Wie lösen erfolgreiche Unternehmen dieses Problem auf?</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps richtig](./img/diagram_41.svg)
+
+&nbsp;
+----------
+
+<aside class="notes"><ul>
+<li>Schauen wir uns einfach noch mal das Bild an, dass ich gerade gezeigt habe.</li>
+<li>Ein Team mit wenig Fußvolk, also Entwicklern und dafür vielen spezialisierten Rollen</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps richtig](./img/diagram_42.svg)
+
+&nbsp;
+----------
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>In einem Bereich liegt die Lösung auf der Hand</li>
+<li>Entwickler entwickeln heute schon nicht ausschließlich</li>
+<li>die Testautomatisierung und insbesondere die Unittests gehören heute als integraler Bestandteil zur Entwicklung dazu</li>
+<li>Dazu mussten die Entwickler eine ganze Menge über Tests lernen</li>
+<li>und natürlich gibt es heutzutage eine Vielzahl leistungsstarker Werkzeuge, die es dem Entwickler erleichtern, die Testautomatisierung neben seiner sonstigen Entwicklungstätigkeit mit zu erledigen</li>
+<li>nichts desto trotz, gibt es in vielen Teams Teammitglieder, die eine besondere Affinität und einen stärkeren Fokus auf das Thema Tests haben, also quasi die Testexperten im Team sind</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps richtig](./img/diagram_43.svg)
+
+&nbsp;
+----------
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Das gleiche passiert schrittweise auch mit anderen querschnittlichen Kompetenzen, die langsam aber sicher ebenfalls zur Entwicklung gehören</li>
+<li>Damit geht der Trend in manchen Bereichen wieder vom Spezialisten zum vielseitigen Generalisten</li>
+<li>Trotzdem werden Entwickler auch einen Fokus haben, wo sie im Team über das meiste Wissen verfügen und auf einem Gebiet quasi als Champion agieren</li>
+<li>Letztendlich glauben wir, dass die DevOps-Rolle in einem agilen Team nicht durch ein spezialisiertes Rolle Teammitglied besetzt wird. Vielmehr handelt es sich bei DevOps um eine Fähigkeit, über die mehrere Mitglieder im Team und damit das gesamte Team verfügen ==&gt; Mein Zielbild ist also das DevOps-fähige Team</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps richtig](./img/diagram_43.svg)
+
+Biz
+----------------
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>wenn man eine Vorliebe für Kunstbegriffe hat, dann landet man quasi beim</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps richtig](./img/diagram_43.svg)
+
+BizUX
+----------------
+</script></section><section data-markdown><script type="text/template">
+![DevOps richtig](./img/diagram_43.svg)
+
+BizUXSec
+----------------
+</script></section><section data-markdown><script type="text/template">
+![DevOps richtig](./img/diagram_43.svg)
+
+BizUXSecDev
+----------------
+</script></section><section data-markdown><script type="text/template">
+![DevOps richtig](./img/diagram_43.svg)
+
+BizUXSecDevQA
+----------------
+</script></section><section data-markdown><script type="text/template">
+![DevOps richtig](./img/diagram_43.svg)
+
+BizUXSecDevQAOps
+----------------
+</script></section></section><section ><section data-markdown><script type="text/template">
+## Was spricht gegen DevOps?
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Auch wenn das jetzt alles einfach und logisch klang, können wir dennoch in vielen Unternehmen erkennen, dass sie sich schwer tun mit der Einführung von DevOps.</li>
+<li>Wo liegen nach meiner Erfahrung die Knackpunkte, bei denen viele Unternehmen ins Schwitzen kommen, wenn es um die Einführung von DevOps geht?</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### 24*7 Support?
+
+<aside class="notes"><ul>
+<li>Das größte Problem lauert für viele beim 24*7 Support.</li>
+<li>&quot;Den will doch kein Entwickler machen&quot; ist das Standard-Argument der DevOps-Skeptiker</li>
+<li>Und in der Tat, beim Thema Wochenendbereitschaft, dreht sich vielen Entwicklern der Magen um</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Zusammenspiel zwischen Entwicklung und Betrieb
+
+![DevOps Support](./img/Release-Reifegrad.png)
+
+<aside class="notes"><p>Steven</p>
+<ul>
+<li>Der Denkfehler vieler DevOps Skeptiker sowohl aus den Reihen der Admins als auch der Entwickler liegt darin, dass sie von der heutigen Ausgangssituation ausgehen, also von schlecht betreibbaren Anwendungen</li>
+<li>Dabei passiert in Wirklichkeit eines, die Entwickler haben eine hohe intrinsische Motivation, Schmerzen zu vermeiden, also nächtliche Anrufe am Wochenden. Und sie haben die Möglichkeit, Maßnahmen zu ergreifen, die nächlichen Anrufen vorbeugen</li>
+<li>Früher oder später wird allen Beteiligten klar, dass sich alles, was sich in einem Run-Book aufschreiben lässt, um einen Betrieb durch Dritte zu ermöglichen,</li>
+<li>dass sich das alles auch automatisieren lässt, so das gar kein Mensch im Störungsfall mehr eingreifen muss</li>
+<li>Wir haben erst vor kurzem in einem größeren Architektur-Review bei einem Kunden in der Praxis überprüfen können, welchen großen Schritt die Systemlandschaft in Sachen Robustheit und Betreibbarkeit gemacht hat, seitdem die Betriebsverantwortung aus einer zentralen Betriebsabteilung in die Teams verlagert wurde.</li>
+<li>Dort funktioniert der automatisierte 24x7 Betrieb der Anwendungen inzwischen so gut, dass man auf eine formale, vertraglich fixierte Bereitschaft seitens der Teams trotz 24x7 Betrieb und hohen Anforderungen an die tatsächliche Verfügbarkeit verzichten kann. </li>
+<li>Die Teammitglieder veröffentlichen ihre Telefonnummern für den Störfall freiwillig, weil sie wissen, dass dieses Ereignis nur extrem selten eintreten wird.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Zentrale Infrastruktur?
+
+<aside class="notes"><ul>
+<li>das zweite Totschlag-Argument der DevOps-Skeptiker ist in der Regel die zentrale Infrastruktur,</li>
+<li>Wo bleibt bei der Einfühgun von DevOps der Betrieb der zentralen Infrastruktur?</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_02.svg)
+
+<aside class="notes"><ul>
+<li>Ich hatte bei der Darstellung der traditionellen Aufgabenverteilung zwischen Entwicklung und Betrieb ein wenig geschummelt.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_05.svg)
+
+<aside class="notes"><ul>
+<li>In Wirklichkeit verantwortet Ops neben dem Applikationsbetrieb bisher auch den Betrieb der Basis-Infrastruktur</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_06.svg)
+
+<aside class="notes"><ul>
+<li>und in Wirklichkeit, benötigt man für die zentrale Infrastruktur natürlich nicht nur einen Betrieb, sondern auch eine Weiterentwicklung</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_07.svg)
+
+<aside class="notes"><ul>
+<li>Wir haben beim Thema DevOps bislang immer nur über die Zusammenlegung von Anwendungs-Entwicklung und -Betrieb gesprochen, also Application DevOps</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_08.svg)
+
+<aside class="notes"><ul>
+<li>Das DevOps Prinzip trifft aber genauso auch auf die Bereitstellung der zentralen Infrastruktur zu.</li>
+<li>Das erfordert querschnittliche Kompetenzen</li>
+<li>Wiederkehrende DevOps-Aufgaben werden in Form von Libraries abstrahiert und den verschiedenen Teams zur Verfügung gestellt (z.B. Terraform Module)</li>
+<li>Die Application Teams konsumieren die zentrale Infrastruktur (oder die Cloud-Infrastruktur) durch Self Services</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Aufgaben](./img/diagram_09.svg)
+
+<aside class="notes"><ul>
+<li>Letztendlich wird die Zweiteilung in Entwicklung und Betrieb also durch eine Zweiteilung in Applikationen und Infrastruktur ersetzt</li>
+<li>Auf beiden Ebenen werden DevOps Prinzipien und Technologien zum Einsatz gebracht</li>
+<li>Aus den alten OPS-Teams werden einzelne Mitarbeiter in die Applikations-Teams wechseln, um die Ops-Kompetenzen in den Applikations-Teams zu stärken</li>
+<li>Gleichzeitig werden auch einzelne Entwickler in die Infrastruktur-Teams wechseln, um die Entwicklungs-Kompetenzen in diesen Teams zu stärken.</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Wie erwerbe ich als Entwickler das benötigte DevOps-KnowHow?
+
+<aside class="notes"><ul>
+<li>Wie einzelne OPS-Mitarbiter in die Anwendungs-Teams wechseln oder auch geschickt werden, kann ich mir ja noch gut vorstellen.</li>
+<li>Aber wie soll das funktionieren, dass zukünftig alle oder zumindest viele Entwickler sich mit den OPS- und Infrastruktur-Themen auskennen?</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Ausbildung](./img/diagram_19.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>In der Tat, das ist eine sehr berechtigte Frage.</li>
+<li>Lässt uns noch einmal auf das Bild vom Anfang schauen, wo ich erklärt habe, was die DevOps Tätigkeiten ausmacht.</li>
+<li>Mit den meisten dort genannten Dingen, wie z.B. Testautomatisierung, kennt sich Otto Normal-Entwickler wunderbar aus.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Ausbildung](./img/diagram_20.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Es gibt aber auch Themen, wie automatisierte Infrastrukturprovisionierung und Infrastructure as Code, die für viele Entwickler noch Neuland darstellen.</li>
+<li>Dazu kommen weitere Kompetenzen, um die sich bislang die Admins gekümmert haben</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Ausbildung](./img/diagram_21.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Betriebssysteme</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Ausbildung](./img/diagram_22.svg)
+
+<aside class="notes"><p>uwe</p>
+<ul>
+<li>Server-Administration</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Ausbildung](./img/diagram_23.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Netzwerk und andere Infrastruktur</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+![DevOps Ausbildung](./img/diagram_24.svg)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Cloud-Services bei Amazon, Google &amp; Co.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="col-2" -->
+
+&nbsp;
+
+![DevOps Roadmap](./img/roadmap.png)
+
+<aside class="notes"><p>uwe</p>
+<ul>
+<li>Learning by Doing ist hier für mich das große Stichwort</li>
+<li>Gerade in der Zusammenarbeit von ehemaligen OPS-Mitarbeitern und interessierten Entwicklern können beide Seiten viel voneinander lernen</li>
+<li>Zu Infrastructure as Code gehört für mich auch das gemeinsame Arbeiten an diesem Code in Form von Pair Programming, einer optimal für das Lernen geeigneten Form der Zusammenarbeit im Entwicklungs-Team</li>
+<li>Daneben gehört aber auch die explizite Ausbildung in Form von Trainings mit auf die Agenda.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="col-2" -->
+
+Kamran Ahmed
+https://github.com/kamranahmedse/developer-roadmap#devops-roadmap
+
+![DevOps Roadmap](./img/roadmap.png)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Auf github findet sich dazu mit der DevOps RoadMap ein übersichtlicher Fahrplan, den man einfach und schnell auf die eigenen Bedürfnisse im Unternehmen anpassen und abwandeln kann.</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template"><!-- .slide: class="col-2" -->
+
+Kamran Ahmed
+https://github.com/kamranahmedse/developer-roadmap#devops-roadmap
+<br/><br/>
+Javin Paul
+https://hackernoon.com/the-2018-devops-roadmap-31588d8670cb
+
+![DevOps Roadmap](./img/roadmap.png)
+
+<aside class="notes"><p>Uwe</p>
+<ul>
+<li>Auf Hackernoon hat der Verfasser Javin Paul noch einen erläuternden Blog-Beitrag veröffentlicht</li>
+</ul>
+</aside></script></section></section><section  data-markdown><script type="text/template">
+## Fazit: DevOps ist mehr als ein Hype
+
+* an DevOps führt in Zukunft kein Weg vorbei <!-- .element: class="fragment" -->
+* Start Doing <!-- .element: class="fragment" -->
+* Learn Fast <!-- .element: class="fragment" -->
+* Die Welt wartet nicht darauf, dass wir in Deutschland aus dem Knick kommen <!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+## Noch Fragen?
+
+Uwe Bessle @bessi65<br/>
+[uwe.bessle@iteratec.com](mailto:uwe.bessle@iteratec.com)
+
+https://iteratec.de
+
+https://github.com/UBessle/ITMC-DevOps-slides
+</script></section></div>
+    </div>
+
+    <script src="./lib/js/head.min.js"></script>
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"none","slideNumber":true}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
