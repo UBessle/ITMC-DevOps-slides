@@ -4,28 +4,28 @@
 Uwe.Bessle@iteratec.de
 
 Notes:
-* Herzlich Willkommen zum DevOps Vortrag im Rahmen des ITMC Innovation Forums 2019. 
+* Herzlich Willkommen zum DevOps Vortrag im Rahmen des ITMC Innovation Forums 2019.
 * Meine feste Überzeugung ist es, dass das Thema DevOps mehr als nur ein Hype ist. DevOps wird das Anforderungsprofil, an die künftige Arbeit als Software-Entwickler aber auch an die generelle Organisation der IT in Unternehmen nachhaltig verändern.
 * Aber lasst uns mit der Frage starten, ob DevOps überhaupt ein Hype ist.
 
 ---
 
-## DevOps - ein aktueller Hype
+## DevOps - ein Hype
 
 Das Interesse an DevOps wächst kontinuierlich
 
-![DevOps Trend](./img/DevOps_Google_Trends_2019-04-14.png)
+![DevOps Trend](./img/DevOps_Google_Trends_2019-05-20.png)
 
 Notes: Uwe
 Wie man an den Daten von Google Trends sieht, steigt das Interesse am Thema DevOps seit 2014 kontinuierlich an. Seit ca. Mitte 2018 hat sich diese Entwicklung sogar noch beschleunigt.
 
 ----
 
-## DevOps - ein aktueller Hype
+## DevOps - ein Hype
 
-Zum Vergleich das Interesse am aktuellen Hype-Thema Kubernetes
+Zum Vergleich das Interesse an Kubernetes
 
-![DevOps Kubernetes Trend](./img/DevOps_kubernetes_Google_Trends_2019-04-14.png)
+![DevOps Kubernetes Trend](./img/DevOps_kubernetes_Google_Trends_2019-05-20.png)
 
 Notes: Uwe
 Damit Ihr ein Gefühl für das absolute Interesse an dem Thema bekommt, habe ich hier mal den Vergleich zum Interesse an Kubernetes dargestellt.
@@ -33,40 +33,40 @@ Wie man sieht, hat Kubernetes den anfänglichen Rückstand seit Anfang 2016 kont
 
 ----
 
-## DevOps - ein aktueller Hype
+## DevOps - ein Hype
 
 China und Indien liegen weit vorn beim Interesse an DevOps
 
-![DevOps Trend](./img/DevOps_Google_Trends_nach-Region_2019-04-14.png)
+![DevOps Trend](./img/DevOps_Google_Trends_nach-Region_2019-05-20.png)
 
 Notes: Uwe
 Besonders interessant war für mich die Auswertung nach Regionen. China und Indien liegen weit vorn.
 
 ----
 
-## DevOps - ein aktueller Hype
+## DevOps - ein Hype
 
 Die USA und Großbritannien müssen aufpassen, nicht abgehängt zu werden
 
-![DevOps Trend](./img/DevOps_Google_Trends_nach-Region-US_2019-04-14.png)
+![DevOps Trend](./img/DevOps_Google_Trends_nach-Region-US_2019-05-20.png)
 
 Notes: Uwe
-Während die üblichen Vorreiter, also die USA und Großbritannien mit deutlichem Abstand bei den Google Suchanfragen folgen
+Während die üblichen Vorreiter, also die USA und Großbritannien mit deutlichem Abstand bei den Google Suchanfragen folgen.
 
 ----
 
-## DevOps - ein aktueller Hype
+## DevOps - ein Hype
 
 Deutschland rangiert momentan unter ferner liefen
 
-![DevOps Trend](./img/DevOps_Google_Trends_nach-Region-DE_2019-04-14.png)
+![DevOps Trend](./img/DevOps_Google_Trends_nach-Region-DE_2019-05-20.png)
 
 Notes: Uwe
-Deutschland rangiert da schon etwas abgeschlagen, zwischen den Vereinigten Arabischen Emiraten und Südafrika.
+Deutschland rangiert da schon etwas abgeschlagen nach Südafrika und knapp vor Litauen.
 
 ----
 
-## DevOps - ein aktueller Hype
+## DevOps - ein Hype
 
 DevOps Stellenausschreibungen auf StepStone
 
@@ -75,9 +75,20 @@ DevOps Stellenausschreibungen auf StepStone
 Notes: Uwe
 Auch auf dem Stellenmarkt spielt das Thema DevOps inzwischen eine große Rolle. Hier einmal exemplarisch 1310 Stellenausschreibungen Anfang Mai auf StepStone für DevOps
 
+----
+
+## DevOps - ein Hype
+
+DevOps Stellenausschreibungen auf Indeed
+
+<img src="./img/Indeed_Jobsuche_DevOps_2019-06-20.png" width=50%>
+
+Notes: Uwe
+Bei Indeed sind es aktuell sogar mehr als 2.200 Stellenausschreibungen, davon immerhin 170 in Hamburg
+
 ---
 
-## Was bedeutet DevOps eigentlich?
+## Was bedeutet DevOps?
 
 Notes: Uwe
 - DevOps ist also tatsächlich aktuell ein Hype-Thema.
@@ -86,20 +97,20 @@ Notes: Uwe
 - Dabei ist es eigentlich ganz einfach.
 
 ----
-
+## Was bedeutet DevOps?
 ![Dev und Ops](./img/diagram_01.svg)
 
-Notes: 
+Notes:
 Bei DevOps geht es genau darum, Applikations-Entwicklung
 
 ----
-
+## Was bedeutet DevOps?
 ![Dev und Ops](./img/diagram_02.svg)
 
-Notes: 
+Notes:
 und Betrieb von Anwendungen,
 ----
-
+## Was bedeutet DevOps?
 ![Dev und Ops](./img/diagram_03.svg)
 
 Notes:
@@ -107,7 +118,7 @@ Notes:
 - über die dann ab und zu mal ein fertiges Release geworfen wurde,
 
 ----
-
+## Was bedeutet DevOps?
 ![Dev und Ops](./img/diagram_04.svg)
 Notes:
 zusammenzubringen.
@@ -122,6 +133,7 @@ Notes:
 - Was tut man denn da so?
 
 ----
+## Was tut man da?
 
 ![DevOps Aufgaben](./img/diagram_11.svg)
 
@@ -132,6 +144,7 @@ Notes: Uwe
 - Das heißt dann zu neudeutsch automatisierte Infrastrukturprovisionierung.
 
 ----
+## Was tut man da?
 
 ![DevOps Aufgaben](./img/diagram_12.svg)
 
@@ -142,6 +155,7 @@ Notes: Uwe
 - oder eben abgerissen, wenn sie nicht mehr benötigt wird
 
 ----
+## Was tut man da?
 
 ![DevOps Aufgaben](./img/diagram_13.svg)
 
@@ -150,6 +164,7 @@ Notes: Uwe
 - sondern z.B. auch die Sicherung, Wiederherstellung und Überwachung (Monitoring und Alerting) der betriebenen Systeme
 
 ----
+## Was tut man da?
 
 ![DevOps Aufgaben](./img/diagram_14.svg)
 
@@ -162,6 +177,7 @@ Notes: Uwe
   * also z.B. die Nummer des zugehörigen Tickets oder der zugrunde liegenden Feature_Story
 
 ----
+## Was tut man da?
 
 ![DevOps Aufgaben](./img/diagram_15.svg)
 
@@ -169,6 +185,7 @@ Notes: Uwe
 - und natürlich schreibt man als Entwickler für seinen Code vernünftige automatisierte Tests
 
 ----
+## Was tut man da?
 
 ![DevOps Aufgaben](./img/diagram_16.svg)
 
@@ -176,6 +193,7 @@ Notes: Uwe
 - wann immer es Änderungen gibt, sorgen entsprechende Pipelines für die Continuous Integration
 
 ----
+## Was tut man da?
 
 ![DevOps Aufgaben](./img/diagram_17.svg)
 
@@ -185,6 +203,7 @@ Notes: Uwe
 
 
 ----
+## Was tut man da?
 
 ![DevOps Aufgaben](./img/diagram_18.svg)
 
@@ -193,6 +212,7 @@ Notes: Uwe
 - im Sinne eines Continuous Delivery
 
 ----
+## Was tut man da?
 
 ![DevOps Aufgaben](./img/diagram_19.svg)
 
@@ -205,8 +225,6 @@ Notes: Uwe
     * Continuous Integration / Continuous Delivery
 
 ---
-<!-- .slide: class="t-210" -->
-
 ## Warum DevOps?
 
 Notes: Uwe
@@ -216,15 +234,31 @@ Notes: Uwe
 - Was bringt das eigentlich?
 
 ----
-<!-- .slide: class="t-210" -->
-
+<!-- .slide: class="warum-devops" -->
 ## Warum DevOps?
 
-### you build it, you run it
+### Skalierbarkeit in der Infrastruktur
+- 1 Server betreibt jeder manuell
+- 10 Server geht noch
+- 100 Server geht zur Not
+- 1.000 Server sind manuell schon nicht mehr praktikabel betreibbar
+- 100.000 Server manuell zu betreiben, ist unvorstellbar
 
-Notes: 
-- Ganz klar, die entscheidende Antwort auf die letzte Frage lautet, "you build it, you run it".
-- Für mich ist das der mit Abstand wichtigste Punkt.
+Notes:
+- Der ursprüngliche Treiber für DevOps waren die enorm gestiegenen Anforderungen an die Skalierung der Infrastruktur.
+
+----
+<!-- .slide: class="warum-devops" -->
+## Warum DevOps?
+
+### Skalierbarkeit in der Infrastruktur
+### you build it, you run it
+* höhere Verfügbarkeit
+* bessere Betreibbarkeit
+
+Notes:
+- Nicht jeder Firma hat die Probleme von Facebook, Amazon und Google
+- Die für mich entscheidende Triebfeder für den Run Richtung DevOps lautet deshalb, "you build it, you run it".
 - Heerscharren von Admins haben sich in der Vergangenheit über schlecht betreibbare Software von den Entwicklern beschwert.
 - Und um ehrlich zu sein, viel zu oft hatten sie mit ihren Beschwerden recht.
   * unklare Fehlermeldungen
@@ -238,15 +272,17 @@ Notes:
 - Das Ziel ist, dass Software-Lösungen gebaut werden, bei denen nach einem Release-Termin gar niemand mehr rausgeklingelt werden muss.
 
 ----
-<!-- .slide: class="t-210" -->
-
+<!-- .slide: class="warum-devops" -->
 ## Warum DevOps?
 
+### Skalierbarkeit in der Infrastruktur
 ### you build it, you run it
-### speed
+### Development Speed
+* bessere Time to Market
+* mehr Flexibilität bei der Weiterentwicklung
 
 Notes:
-- Der zweite ganz wichtige Punkt ist mehr Speed bei der Entwicklung und Live-Stellung neuer Features
+- Der dritte ganz wichtige Punkt ist mehr Speed bei der Entwicklung und Live-Stellung neuer Features
 - Jeder Entwickler weiß, wie nervig und zeitaufwändig es in der Vergangenheit war, die Admins von selbst kleinsten Änderungen der Infrastruktur zu überzeugen
 - da mussten Tickets geschrieben und vor allen Dingen mühsam gerechtfertigt werden
 - für nahezu jede Änderung musste man wegen potentiell möglicher Auswirkungen einen extra Antrag beim Change Advisory Board stellen
@@ -256,15 +292,15 @@ Notes:
 ---
 
 ## Mehr Speed?
-## Also Agil?
+## War das nicht der Grund für Agilität?
 
-Notes: 
+Notes:
 - Stop, mehr Speed?
 - Das war doch das Thema mit der Agilität.
 - Was hat das denn jetzt wieder mit DevOps zu tun?
 
 ----
-
+### Verhältnis Agilität <=> DevOps
 ![DevOps und Agilität](./img/diagram_51.svg)
 
 &nbsp;
@@ -273,7 +309,7 @@ Notes: Uwe
 - Lasst uns dazu einmal auf folgendes Bild schauen
 
 ----
-
+### Verhältnis Agilität <=> DevOps
 ![DevOps und Agilität](./img/diagram_52.svg)
 
 &nbsp;
@@ -284,7 +320,7 @@ Notes: Uwe
 - Das hilft aber auch dabei, die Geschwindigkeit von Änderungen zu erhöhen, indem die Verzögerung eliminiert wird, die unweigerlich an Teamgrenzen eintritt, um notwendige Abstimmungen und Umpriorisierungen herbeizuführen.
 
 ----
-
+### Verhältnis Agilität <=> DevOps
 ![DevOps und Agilität](./img/diagram_53.svg)
 
 &nbsp;
@@ -294,31 +330,31 @@ Notes: Uwe
 - Während es bei DevOps darum geht, die Schranken zwischen Entwicklern und Betrieb einzureißen, geht es bei Agilen Projekten und Vorgehensweisen unter anderem darum, die Schranken zwischen der Fachabteilung und den Entwicklern einzureißen
 
 ----
-
+### Verhältnis Agilität <=> DevOps
 ![DevOps und Agilität](./img/diagram_54.svg)
 
 &nbsp;
 
 Notes: uwe
-- Wenn wir beide Trends zusammennehmen, dann landen wir bei Agilen Teams mit DevOps-Kompetenzen
+- Wenn wir beide Trends zusammennehmen, dann landen wir bei Agilen Teams mit DevOps-Kompetenz
 - in der heutigen Zeit gibt es natürlich auch dafür eine Abkürzung
 
 ----
-
+### Verhältnis Agilität <=> DevOps
 ![DevOps und Agilität](./img/diagram_54.svg)
 
 Biz
 -------
 
 ----
-
+### Verhältnis Agilität <=> DevOps
 ![DevOps und Agilität](./img/diagram_54.svg)
 
 BizDev
 --------
 
 ----
-
+### Verhältnis Agilität <=> DevOps
 ![DevOps und Agilität](./img/diagram_54.svg)
 
 BizDevOps
@@ -326,11 +362,11 @@ BizDevOps
 
 ---
 
-## Wie funktioniert DevOps heute in der Praxis?
+## Wie organisiert man DevOps in der Praxis?
 
 Notes: uwe
 - Na gut, das mit der Agilität hätten wir geklärt.
-- Aber wie funktioniert denn DevOps heute tatsächlich in der Praxis?
+- Aber wie organisiert man denn DevOps heute tatsächlich in der Praxis?
 - Wie sieht das in den realen Projekten aus?
 
 ----
@@ -351,7 +387,7 @@ Schauen wir uns doch mal an, wie das in der Praxis meistens läuft
 &nbsp;
 ----------
 
-Notes: 
+Notes:
 - In agilen Projekte kommt dann in der Regel noch ein Agiler Coach oder auch Scrum Master hinzu
 - und auf alle Fälle natürlich auch ein sogenannter Product Owner
 
@@ -362,7 +398,7 @@ Notes:
 &nbsp;
 ----------
 
-Notes: 
+Notes:
 - sobald DevOps ins Spiel kommt, wird in der Regel versucht, diese Aufgabe durch einen spezialisierten DevOps Engineer zu besetzen.
 - Meist kommt der aus dem bisherigen Admin-Team
 
@@ -373,7 +409,7 @@ Notes:
 &nbsp;
 ----------
 
-Notes: 
+Notes:
 * Neben dem DevOps Engineer gibt es meistens aber noch mehr spezialisierte Rollen im Team
   * den Security-Champion
   * den UX-Experten
@@ -407,7 +443,7 @@ Notes: Steven
 
 ## Wie funktioniert DevOps richtig?
 
-Notes: 
+Notes:
 * Wie lösen erfolgreiche Unternehmen dieses Problem auf?
 
 ----
@@ -503,10 +539,10 @@ Notes: Uwe
 * Wo liegen nach meiner Erfahrung die Knackpunkte, bei denen viele Unternehmen ins Schwitzen kommen, wenn es um die Einführung von DevOps geht?
 
 ----
-
+## Was spricht gegen DevOps?
 ### 24*7 Support?
 
-Notes: 
+Notes:
 * Das größte Problem lauert für viele beim 24*7 Support.
 * "Den will doch kein Entwickler machen" ist das Standard-Argument der DevOps-Skeptiker
 * Und in der Tat, beim Thema Wochenendbereitschaft, dreht sich vielen Entwicklern der Magen um
@@ -523,14 +559,26 @@ Notes: Steven
 * Früher oder später wird allen Beteiligten klar, dass sich alles, was sich in einem Run-Book aufschreiben lässt, um einen Betrieb durch Dritte zu ermöglichen,
 * dass sich das alles auch automatisieren lässt, so das gar kein Mensch im Störungsfall mehr eingreifen muss
 * Wir haben erst vor kurzem in einem größeren Architektur-Review bei einem Kunden in der Praxis überprüfen können, welchen großen Schritt die Systemlandschaft in Sachen Robustheit und Betreibbarkeit gemacht hat, seitdem die Betriebsverantwortung aus einer zentralen Betriebsabteilung in die Teams verlagert wurde.
-* Dort funktioniert der automatisierte 24x7 Betrieb der Anwendungen inzwischen so gut, dass man auf eine formale, vertraglich fixierte Bereitschaft seitens der Teams trotz 24x7 Betrieb und hohen Anforderungen an die tatsächliche Verfügbarkeit verzichten kann. 
+* Dort funktioniert der automatisierte 24x7 Betrieb der Anwendungen inzwischen so gut, dass man auf eine formale, vertraglich fixierte Bereitschaft seitens der Teams trotz 24x7 Betrieb und hohen Anforderungen an die tatsächliche Verfügbarkeit verzichten kann.
 * Die Teammitglieder veröffentlichen ihre Telefonnummern für den Störfall freiwillig, weil sie wissen, dass dieses Ereignis nur extrem selten eintreten wird.
 
 ----
 
-### Zentrale Infrastruktur?
+## Was spricht gegen DevOps?
+### 24*7 Support?
+### Effizienz?
 
-Notes: 
+* Behauptung: der erfahrene Admin ist viel effizienter bei der Betreuung und Wartung vieler Server
+* DevOps-Realität: KnowHow steckt im Code (IaC), der von vielen genutzt werden kann
+
+----
+
+## Was spricht gegen DevOps?
+### 24*7 Support?
+### Effizienz?
+### Wer betreibt die zentrale Infrastruktur?
+
+Notes:
 * das zweite Totschlag-Argument der DevOps-Skeptiker ist in der Regel die zentrale Infrastruktur,
 * Wo bleibt bei der Einfühgun von DevOps der Betrieb der zentralen Infrastruktur?
 
@@ -538,7 +586,7 @@ Notes:
 
 ![DevOps Aufgaben](./img/diagram_02.svg)
 
-Notes: 
+Notes:
 * Ich hatte bei der Darstellung der traditionellen Aufgabenverteilung zwischen Entwicklung und Betrieb ein wenig geschummelt.
 
 ----
@@ -552,21 +600,21 @@ Notes:
 
 ![DevOps Aufgaben](./img/diagram_06.svg)
 
-Notes: 
+Notes:
 * und in Wirklichkeit, benötigt man für die zentrale Infrastruktur natürlich nicht nur einen Betrieb, sondern auch eine Weiterentwicklung
 
 ----
 
 ![DevOps Aufgaben](./img/diagram_07.svg)
 
-Notes: 
+Notes:
 * Wir haben beim Thema DevOps bislang immer nur über die Zusammenlegung von Anwendungs-Entwicklung und -Betrieb gesprochen, also Application DevOps
 
 ----
 
 ![DevOps Aufgaben](./img/diagram_08.svg)
 
-Notes: 
+Notes:
 * Das DevOps Prinzip trifft aber genauso auch auf die Bereitstellung der zentralen Infrastruktur zu.
 * Das erfordert querschnittliche Kompetenzen
 * Wiederkehrende DevOps-Aufgaben werden in Form von Libraries abstrahiert und den verschiedenen Teams zur Verfügung gestellt (z.B. Terraform Module)
@@ -576,7 +624,7 @@ Notes:
 
 ![DevOps Aufgaben](./img/diagram_09.svg)
 
-Notes: 
+Notes:
 * Letztendlich wird die Zweiteilung in Entwicklung und Betrieb also durch eine Zweiteilung in Applikationen und Infrastruktur ersetzt
 * Auf beiden Ebenen werden DevOps Prinzipien und Technologien zum Einsatz gebracht
 * Aus den alten OPS-Teams werden einzelne Mitarbeiter in die Applikations-Teams wechseln, um die Ops-Kompetenzen in den Applikations-Teams zu stärken
@@ -586,7 +634,7 @@ Notes:
 
 ## Wie erwerbe ich als Entwickler das benötigte DevOps-KnowHow?
 
-Notes: 
+Notes:
 * Wie einzelne OPS-Mitarbiter in die Anwendungs-Teams wechseln oder auch geschickt werden, kann ich mir ja noch gut vorstellen.
 * Aber wie soll das funktionieren, dass zukünftig alle oder zumindest viele Entwickler sich mit den OPS- und Infrastruktur-Themen auskennen?
 
@@ -673,6 +721,37 @@ https://hackernoon.com/the-2018-devops-roadmap-31588d8670cb
 
 Notes: Uwe
 * Auf Hackernoon hat der Verfasser Javin Paul noch einen erläuternden Blog-Beitrag veröffentlicht
+
+---
+## Aktuelle Herausforderungen?
+
+----
+## Aktuelle Herausforderungen?
+
+### Wandel der Infrastruktur
+* physikalischer Server
+* Virtual Machine
+* Docker Orchestration Platform
+* Serverless
+
+----
+## Aktuelle Herausforderungen?
+
+### Wandel der Infrastruktur
+### Cloud-Provider Abhängigkeit
+* AWS-Lambda / Azure Functions / Google Cloud Function
+* Hoffnungsschimmer: K-Native
+
+----
+## Aktuelle Herausforderungen?
+
+### Wandel der Infrastruktur
+### Cloud-Provider Abhängigkeit
+### Konsequenzen für den verwendeten Technologie-Stack
+* Abrechnung von Serverless nach RAM-Verbrauch
+* JVM + SpringBoot >100MB <=> Go 1 MB
+* GraalVM
+
 ---
 
 ## Fazit: DevOps ist mehr als ein Hype
